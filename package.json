@@ -1,13 +1,17 @@
 {
   "name": "web-iii-challenge",
-  "version": "1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "repository": "https://github.com/AlexEntrepreneur/webdb-iii-challenge",
   "author": "Alex Entrepreneur <hello@alexentrepreneur.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --inspect index.js"
+    "start": "nodemon --inspect index.js",
+    "initDB": "knex init",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "dependencies": {
     "express": "^4.16.4",
