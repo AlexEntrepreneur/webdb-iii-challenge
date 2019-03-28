@@ -1,5 +1,5 @@
 const express = require("express");
-const cohortRoutes = require("./routers/cohort-router.js");
+const cohortRoutes = require("./routers/cohorts-router.js");
 const server = express();
 
 server.use(express.json());
